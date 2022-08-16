@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Bank inside</title>
+</head>
+<body>
+  <header>
+    <h1 class="text-6xl text-center mt-10">Let's get some <span class="font-semibold text-blue-600">Moooney</span>
+      !!!</h1>
+  </header>
+  <main>
+    <section class="mt-12 w-9/12 mx-auto">
+      <div class="grid grid-cols-3 text-white gap-5">
+        <div class="bg-emerald-400	p-6 rounded-xl">
+          <h4 class="text-4xl">Deposit</h4>
+          <h2 class="text-6xl">$<span id="diposit-total">00</span></h2>
+        </div>
+        <div class="bg-orange-400	p-6 rounded-xl">
+          <h4 class="text-4xl">Withdraw</h4>
+          <h2 class="text-6xl">$<span id="previus-withdraw-value">00</span></h2>
+        </div>
+        <div class="bg-teal-400	p-6 rounded-xl">
+          <h4 class="text-4xl">Balance</h4>
+          <h2 class="text-6xl">$<span id="total-balance">1240</span></h2>
+        </div>
+      </div>
+    </section>
+    <section class="mt-12 w-9/12 mx-auto">
+      <div class="grid grid-cols-2 text-white gap-5">
+        <div class="bg-emerald-400 px-6 py-14 rounded-xl">
+          <h4 class="text-4xl">Deposit</h4>
+          <input type="number" id="diposit-input" class="px-5 py-2 w-9/12 mt-5 block rounded-lg text-black" placeholder="$ amount you want to diposit">
+          <button class="bg-orange-400 mt-4 px-8 py-3 rounded-lg font-normal" id="diposit-btn">Diposit</button>
+        </div>
+        <div class="bg-orange-400	px-6 py-14 rounded-xl">
+          <h4 class="text-4xl">Withdraw</h4>
+          <input type="number" id="withdraw-feild" class="px-5 py-2 w-9/12 mt-5 block rounded-lg text-black" placeholder="$ amount you want to withdraw">
+          <button class="bg-emerald-400 mt-4 px-8 py-3 rounded-lg font-normal" id="withdraw-btn">Withdraw</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="js/diposit.js"></script>
+  <script src="js/withdraw.js"></script>
+</body>
+</html>
